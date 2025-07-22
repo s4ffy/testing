@@ -1,30 +1,97 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prestige GT | Contact</title>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prestige GT | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-</head><body>
+  <style>
+    .contact-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #111;
+      border-radius: 12px;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.2rem;
+    }
+
+    .contact-item i {
+      margin-right: 12px;
+      font-size: 1.4rem;
+      color: #f5c518;
+      min-width: 24px;
+    }
+
+    .contact-item a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      color: #f5c518;
+    }
+
+    .follow-note {
+      text-align: center;
+      margin-top: 2rem;
+      font-style: italic;
+      color: #ccc;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
   <header class="navbar">
-    <div class="logo">Prestige GT</div>
+    <div class="logo">Prestige GT</div>
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="cars.html">Cars</a>
       <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contacts.html">Contact</a>
+      <a href="booking.html">Book</a>
     </nav>
   </header>
 
   <main class="section">
-    <h2>Contact Us</h2>
-    <p>We’re here to assist you. Reach out to us via:</p>
-    <ul class="contacts-list">
-      <li>Email: info@prestigegt.com.au</li>
-      <li>Instagram: @PrestigeGT_AU</li>
-      <li>TikTok: @PrestigeGT</li>
-      <li>Facebook: /PrestigeGTLuxury</li>
-    </ul>
-    <p>Follow us on social media for updates, fleet photos, and special offers!</p>
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:info@prestigegt.com.au">info@prestigegt.com.au</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/PrestigeGT_AU" target="_blank">@PrestigeGT_AU</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-tiktok"></i>
+        <a href="https://www.tiktok.com/@PrestigeGT" target="_blank">@PrestigeGT</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-facebook"></i>
+        <a href="https://www.facebook.com/PrestigeGTLuxury" target="_blank">/PrestigeGTLuxury</a>
+      </div>
+
+      <p class="follow-note">Follow us on social media for updates, fleet photos, and special offers!</p>
+    </div>
   </main>
-</body></html>
+</body>
+</html>

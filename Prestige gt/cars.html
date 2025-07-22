@@ -1,106 +1,149 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prestige GT | Cars</title>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prestige GT | Cars</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-</head><body>
+  <style>
+    .car-section {
+      padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .car-card {
+      background-color: #111;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .review-card {
+      background-color: #222;
+      color: #fff;
+      padding: 1rem;
+      margin: 1rem auto;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
   <header class="navbar">
-    <div class="logo">Prestige GT</div>
+    <div class="logo">Prestige GT</div>
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="cars.html">Cars</a>
       <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contacts.html">Contact</a>
+      <a href="booking.html">Book</a>
     </nav>
   </header>
 
   <main class="car-section">
     <h2>Explore our collection</h2>
-    <p>At Prestige GT we offer top‑spec vehicles for any occasion</p>
+    <p>At Prestige GT we offer top-spec vehicles for any occasion</p>
 
     <div class="car-grid">
+
+      <!-- Ferrari F8 -->
       <div class="car-card">
+        <img src="https://cdn.motor1.com/images/mgl/k6ooX/s1/ferrari-f8-tributo.jpg" alt="Ferrari F8">
         <h3>Ferrari F8</h3>
+        <p>Model: F8 </p>
+        <p>Year: 2022</p>
         <p>720 HP - 0 to 100 km/h in 2.9s</p>
-        <p>$1,200/day</p>
+        <p>$1,500/day</p>
+        <p>Status: <span style="color: rgb(36, 200, 36);">Available</span></p>
       </div>
-      
-      <div class="car-grid"></div>
-      <div class="car-card">
-        <h3>Lamborgini Huracan</h3>
-        <p>650 HP - 0 to 100 km/h in 3.3s</p>
-        <p>$1,100/day</p>
-    </div>
 
-      <div class="car-grid"></div>
+      <!-- Lamborghini Huracan -->
       <div class="car-card">
-        <h3>Lamborgini Urus</h3>
-        <p>550hp - Ultra-luxury SUV experience</p>
-        <p>$1,400/day</p>
-    </div>
+        <img src="https://cdn.carbuzz.com/gallery-images/1600/782000/100/782164.jpg" alt="Lamborghini Huracan">
+        <h3>Lamborghini Huracan</h3>
+        <p>Model: EVO</p>
+        <p>Year: 2022</p>
+        <p>631 HP - 0 to 100 km/h in 2.9s</p>
+        <p>$1,200/day</p>
+        <p>Status: <span style="color: limegreen;">Available</span></p>
+      </div>
 
-      <div class="car-grid"></div>
+      <!-- Porsche 911 Turbo S -->
       <div class="car-card">
-        <h3>Lamborgini Aventador</h3>
-        <p>Arrive in a peak v12 hyper car</p>
-        <p>$1,700/day</p>
-    </div>
-
-      <div class="car-grid"></div>
-      <div class="car-card">
+        <img src="https://files.porsche.com/filestore/image/multimedia/none/modelseries-992tus-modelimage-sideshot/thumbwhite/3f5a7c6a-ec5c-11ea-80ca-005056bbdc38;sM;twebp/porsche-thumbwhite.webp" alt="Porsche 911 Turbo S">
         <h3>Porsche 911 Turbo S</h3>
+        <p>Model: 992 Turbo S</p>
+        <p>Year: 2023</p>
         <p>640 HP - 0 to 100 km/h in 2.7s</p>
-        <p>$950/day</p>
-    </div>
+        <p>$900/day</p>
+        <p>Status: <span style="color: limegreen;">Available</span></p>
+      </div>
 
-      <div class="car-grid"></div>
+      <!-- Rolls Royce Phantom -->
       <div class="car-card">
-        <h3>Lexus ISF</h3>
-        <p>416 HP - Naturally Aspirated V8</p>
-        <p>$600/day</p>
-    </div>
-
-      <div class="car-grid"></div>
-      <div class="car-card">
-        <h3>Toyota Supra MK5</h3>
-        <p>382 HP - Turbocharged straight 6</p>
-        <p>$500/day</p>
-    </div>
-
-      <div class="car-grid"></div>
-      <div class="car-card">
-        <h3>BMW X5</h3>
-        <p>456hp Family SUV</p>
-        <p>$650/day</p>
-    </div>
-
-      <div class="car-grid"></div>
-      <div class="car-card">
-        <h3>BMW M340i</h3>
-        <p>382hp classy sedan with a sporty touch</p>
-        <p>$520/day</p>
-    </div>
-
-      <div class="car-grid"></div>
-      <div class="car-card">
+        <img src="https://cdn.motor1.com/images/mgl/7e1zJ/s1/2023-rolls-royce-phantom-series-ii.jpg" alt="Rolls Royce Phantom">
         <h3>Rolls Royce Phantom</h3>
-        <p>563hp Peak Luxury</p>
-        <p>$2,200/day</p>
-    </div>
+        <p>Model: Phantom Series II</p>
+        <p>Year: 2023</p>
+        <p>563 HP - Ultra Luxury</p>
+        <p>$2,500/day</p>
+        <p>Status: <span style="color: limegreen;">Available</span></p>
+      </div>
 
-      <div class="car-grid"></div>
+      <!-- BMW M340i -->
       <div class="car-card">
-        <h3>Rolls Royce Ghost</h3>
-        <p>563 HP effortless driving</p>
-        <p>$2000/day</p>
+        <img src="https://cdn.motor1.com/images/mgl/2xoxP/s1/bmw-m340i-xdrive-2023.jpg" alt="BMW M340i">
+        <h3>BMW M340i</h3>
+        <p>Model: G20 xDrive</p>
+        <p>Year: 2023</p>
+        <p>382 HP - Sport Luxury</p>
+        <p>$450/day</p>
+        <p>Status: <span style="color: limegreen;">Available</span></p>
+      </div>
+
+      <!-- Lexus ISF -->
+      <div class="car-card">
+        <img src="https://media.ed.edmunds-media.com/lexus/is-f/2014/oem/2014_lexus_is-f_sedan_base_fq_oem_1_1600.jpg" alt="Lexus ISF">
+        <h3>Lexus ISF</h3>
+        <p>Model: IS F</p>
+        <p>Year: 2014</p>
+        <p>416 HP - 5.0L V8</p>
+        <p>$450/day</p>
+        <p>Status: <span style="color: limegreen;">Available</span></p>
+      </div>
+
     </div>
   </main>
+
+  <section class="section">
+    <h2>Customer Reviews</h2>
+    <div class="review-card">
+      <p><strong>Phillip S</strong> — ⭐⭐⭐⭐⭐</p>
+      <p>"Rented the Porsche 911 Turbo S. Incredible experience, Had alot of fun riding it, great customer service !"</p>
+    </div>
+    <div class="review-card">
+      <p><strong>Amira T.</strong> — ⭐⭐⭐⭐☆</p>
+      <p>"The Lamborghini Huracan turned alot of heads. Booking process was simple, would 100% recommend!"</p>
+    </div>
+  </section>
 </body>
 </html>
-
-      <!-- Your existing car cards go here -->
-    </div>
-  </main>
-</body></html>
