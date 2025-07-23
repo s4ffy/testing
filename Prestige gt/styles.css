@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
-  background-color: #000; /* Black background */
+  background-color: #000; 
   color: white;
 }
 
@@ -30,7 +30,7 @@ body {
   color: #765e04;
 }
 
-/* Hero Section */
+
 .hero {
   background-image: url('images/banner.jpg');
   background-size: cover;
@@ -70,7 +70,7 @@ body {
   background-color: #f5c518;
 }
 
-/* Inverted button (on dark backgrounds) */
+
 .btn-inverse {
   border: 2px solid #f5c518;
   background: transparent;
@@ -87,7 +87,7 @@ body {
   color: white;
 }
 
-/* Services Page */
+
 .services-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -114,7 +114,7 @@ body {
   color: white;
 }
 
-/* About & Contact Section */
+
 .section {
   padding: 3rem 2rem;
   max-width: 900px;
@@ -133,7 +133,7 @@ body {
   color: #f5c518;
 }
 
-/* Car Grid Page */
+
 .car-section {
   padding: 2rem;
   text-align: center;
@@ -182,19 +182,4 @@ body {
   font-size: 1rem;
   background: #fff;
   color: #000;
-}
-
-/* For logo in navbar */
-.logo-img {
-  height: 40px;
-}
-
-/* For logo above hero slogan */
-.hero-logo {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.hero-logo-img {
-  height: 100px; /* adjust as needed */
 }
