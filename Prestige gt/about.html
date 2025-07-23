@@ -1,13 +1,83 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta nam!DOCTYPE html>
-<e="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prestige GT | About</title>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      background-color: #000;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #000;
+    }
+
+    .logo {
+      color: gold;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: gold;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 400px;
+      background: url('images/about-banner.png') no-repeat center center/cover;
+    }
+
+    .about-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .about-section h2 {
+      font-size: 2.5rem;
+      color: gold;
+      margin-bottom: 1.2rem;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header class="navbar">
     <div class="logo">Prestige GT</div>
     <nav class="nav-links">
@@ -20,10 +90,23 @@
     </nav>
   </header>
 
-  <main class="section">
+  <div class="hero-image"></div>
+
+  <section class="about-section">
     <h2>About Prestige GT</h2>
-    <p>Prestige GT is a premier luxury car rental and transport service dedicated to delivering unmatched experiences. We offer high-performance vehicles for hire, chauffeur-driven transport for special occasions, and exclusive self-drive supercars—all in one comprehensive platform.</p>
-    <p>From our fleet selection to our customer support, we ensure every detail meets the highest standards. Join us for unforgettable drives, world-class service, and lasting memories.</p>
-  </main>
+    <p>
+      Prestige GT is more than just a luxury car rental company — we are a lifestyle brand built around passion, precision, and performance. Whether you're seeking an adrenaline-fueled drive in a supercar or a flawless chauffeur experience for a special occasion, Prestige GT is your gateway to luxury on wheels.
+    </p>
+    <p>
+      Our exclusive fleet features world-renowned marques, including Ferrari, Lamborghini, Rolls-Royce, and more. Each vehicle is meticulously maintained and handpicked to ensure the ultimate driving experience.
+    </p>
+    <p>
+      Beyond the vehicles, our team is dedicated to white-glove service from the moment you book. We understand that every client has unique needs, and we tailor every journey to ensure it’s memorable, seamless, and unmistakably premium.
+    </p>
+    <p>
+      At Prestige GT, luxury isn’t just about the car — it's about the feeling. Drive the extraordinary. Arrive in style. Experience Prestige GT.
+    </p>
+  </section>
+
 </body>
 </html>
