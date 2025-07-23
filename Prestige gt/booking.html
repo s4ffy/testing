@@ -61,14 +61,14 @@
   </main>
 
   <script>
-    const secretKey = 'your-secret-key'; // Change this to your secret key
+    const secretKey = 'your-secret-key'; 
 
     function encrypt(value) {
       return CryptoJS.AES.encrypt(value, secretKey).toString();
     }
 
     document.getElementById('bookingForm').addEventListener('submit', function(event) {
-      // Encrypt the sensitive fields before submit
+
       const fullName = document.getElementById('fullName');
       const email = document.getElementById('email');
       const phone = document.getElementById('phone');
@@ -83,3 +83,9 @@
   </script>
 </body>
 </html>
+
+  </section>
+
+  <footer style="text-align: center; padding: 1rem 0; font-size: 0.9rem; color: grey;">
+    "Your Data is only used for booking purposes and is not shared"
+  </footer>
